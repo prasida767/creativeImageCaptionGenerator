@@ -1,0 +1,7 @@
+/* Main app */
+.main-app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px; /* To push content below the header */
+  margin-bottom: 60px; /* To push content above the footer */
+}

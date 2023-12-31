@@ -1,0 +1,83 @@
+ /*MODAL CSS FROM HERE BELOW*/
+  /* Sample CSS styles for the modal */
+  .modal {
+    position: fixed;
+    top: 60%; /* Position the modal 50% from the top of the screen */
+    left: 50%; /* Position the modal 50% from the left of the screen */
+    transform: translate(-50%, -50%); /* Center the modal horizontally and vertically */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 90%; /* Limit the maximum width of the modal */
+    max-height: 90%; /* Limit the maximum height of the modal */
+    overflow: auto; /* Add scrollbar if content overflows the modal */
+  }
+  
+  /* Add this CSS to your Train.css file or your preferred CSS file */
+  .modal-overlay {
+    /* The modal overlay covers the entire screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    /* Add styles for the modal content */
+    padding: 40px;
+  }
+
+  .modal-content-last{
+    margin-bottom: 90px;
+  }
+  
+  .modal-heading {
+    /* Add styles for the modal heading */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .response-data {
+    /* Add styles for the API response data */
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
+  
+  .architecture-image {
+    /* Add styles for the model architecture image */
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .download-link {
+    /* Add styles for the download link */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    /* Add styles for the close button */
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    /* Add styles for the close button on hover */
+    background-color: #0056b3;
+  }

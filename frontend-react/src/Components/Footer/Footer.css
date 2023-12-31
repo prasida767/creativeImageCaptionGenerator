@@ -1,0 +1,35 @@
+/* Footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e6afaf;
+  color: black;
+  text-align: center;
+  padding: 1px;
+  z-index: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow at the top */
+}
+
+.footer-link {
+  color: #f9c74f; /* Yellow text color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #f9d569; /* Slightly lighter yellow color on hover */
+}
+
+/* Add a media query for responsive design */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 8px;
+  }
+
+  .footer-note {
+    font-size: 14px;
+  }
+}

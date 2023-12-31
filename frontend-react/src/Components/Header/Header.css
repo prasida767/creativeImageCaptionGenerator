@@ -1,0 +1,63 @@
+/* Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e6afaf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color:black;
+}
+
+.train-test {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.train-test a {
+  color: #f9c74f; /* Yellow text color */
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #2a9d8f; /* Teal background color */
+  transition: background-color 0.2s;
+}
+
+.train-test a:hover {
+  background-color: #1f776d; /* Darker teal color on hover */
+}
+/* 
+.test-space {
+  margin-left: 20px;
+} */
+
+/* Add a media query for responsive design */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .train-test a {
+    font-size: 16px;
+  }
+}

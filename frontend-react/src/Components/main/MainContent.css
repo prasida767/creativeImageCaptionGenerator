@@ -1,0 +1,69 @@
+/* MainContent.css */
+
+.outerdiv {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 20px; /* Add some gap between grid items */
+  overflow: hidden;
+}
+
+#firstbox,
+#secondbox,
+#thirdbox {
+  text-align: center;
+  padding: 40px; /* Increase the padding to make the boxes larger */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#firstbox {
+  background-color: #f9c74f; /* Yellow background color */
+  color: #333; /* Dark text color */
+}
+
+#secondbox {
+  background-color: #60a5fa; /* Blue background color */
+  color: #fff; /* White text color */
+}
+
+#thirdbox {
+  background-color: #10b981; /* Green background color */
+  color: #fff; /* White text color */
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* Styles for the button */
+#thirdbox button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#thirdbox button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the generated caption */
+#thirdbox p {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #333;
+  /* You can add more styles as needed */
+}
+
+/* Add a media query for responsive design */
+@media screen and (max-width: 768px) {
+  .outerdiv {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+}
